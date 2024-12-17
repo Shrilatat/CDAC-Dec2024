@@ -1,0 +1,67 @@
+https://www.makemytrip.com/
+
+Web Server:
+Java/JEE : Apache Tomcat, Redhat JBoss, Oracle Glassfish, WebLogic, IBM WSAD, Jetty, JWS, ......
+
+.NET : IIS
+
+PHP : Apache HTTPD
+
+Node : No servers
+
+HTML4 form elements : type, name, value, readonly, maxlength, 
+
+HTML5 forms:
+attributes: 16 new form elements :
+- required
+- autofocus
+- placeholder
+- min
+- max
+- pattern
+- minlength
+- title
+
+
+form elements: <input type=?> 13 new form elements
+- email
+- number
+- range
+- date, time, month, datelocal, 
+- color
+- url
+- search
+- tel
+
+
+
+
+Form validation:
+
+required, minlength, maxlength, number, min, max, email, url, pattern
+
+
+AAA101
+BAR119
+
+
+
+Embed media into HTML:
+- image <img src>
+- <audio src=? controls>   
+- <video src=? controls>
+
+
+
+CSS:
+selectors:
+- tag   p{color:blue}, h3,h4{text-align:center}  body{back...:blue}
+- id   #id1{}
+- class  .c1{color:blue}
+
+
+
+
+
+
+

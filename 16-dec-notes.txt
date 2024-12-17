@@ -1,0 +1,61 @@
+HTML - Hyper Text Markup Language
+
+Notepad, Notepad++, VSC, Atom, Sublime, Brackets....
+
+Tags:
+
+<html>
+<body>
+<head> <title>
+<b>, <u>, <i>
+<br> - line break
+Header tags : <h1>...<h6>
+<p> paragraph
+<hr> - hori ruler
+<UL><OL>,<LI> - ordered and unordered lists, list items
+<img src="pencil.png"
+             width="100"
+             height="100"
+             align="left">
+
+<a href=?>  too create links
+
+
+attributes:
+<tag   attrib="value"   attrib="value" >
+
+
+HTML4
+Container tags:
+- <p>
+- <div>
+- <span>
+
+
+HTML4 forms:
+9+3 from elements
+<input type=?>
+
+Text-based:
+- text
+- password
+- hidden
+
+Button-based
+- button
+- submit
+- reset
+
+Misc-based:
+- radio
+- checkbox
+- file
+
+
+Text area: <textarea>
+Drop down list : <select><option>
+
+<button type="button">
+<input type="button">
+
+
