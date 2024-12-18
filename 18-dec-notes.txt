@@ -1,0 +1,152 @@
+3 reasons for Client side scripting?
+- Form/clinet-side validation
+- Event handling
+- DOM manipulation
+
+
+JavaScript:
+- part1 : Lang fundamentals
+- part2 : DOM
+
+
+Where can i put JS code?
+- <body>
+- <head>
+- external file (.js)
+
+
+JS is a loosely typed language
+
+var i;
+
+function greet(){
+          document.write("Hello User!!")
+       }
+       function greetUser(fname, lname){
+        document.write("Hello " + fname + "," + lname)
+       }
+
+       function add(a, b){
+        return a+b;
+       }
+
+       console.log("The sum is ", add(10,20))
+
+scopes:
+- local
+- global
+
+
+Function expression:
+
+
+<script>
+        //Function expression
+        var a = 100
+        var b = "Hi"
+        var c = 20.45
+        var d = a+c/100*6000
+        var e = function(){}
+
+        function greet(){  //named function
+          document.write("Hello User!!")
+        }
+        //greet()
+
+        var greet1 = function(){
+            document.write("Hello User!!")
+        }
+        greet1()
+
+
+        function greetUser(fname, lname){
+           document.write("Hello " + fname + "," + lname)
+       }
+       
+       var greetUser1 = function(fn, ln){
+        document.write("Hello " + fn + "," + ln)
+       }
+       greetUser1("aaa","bbb")
+
+       function add(a, b){
+        return a+b;
+       }
+
+       var add1 = function(a,b){
+        return a+b
+       }
+
+       document.write("The sum is " + add1(101,201))
+
+    </script>
+
+
+
+Functions:
+- user def functions
+- built-in functions
+
+parseInt(), parseFloat(), isFinite(), isNan()
+
+
+JS Objects!
+- Every JS obj exposes both - props as well as methods
+- 
+
+Types:
+- predefined/core/built-in objects
+- user-defined objects
+
+
+predefined/core/built-in objects
+- string, Date, Math, array, Boolean, number, regexp
+
+String:
+- properties: length, prototype
+- methods:
+
+- slice(), substr(), substring()
+
+obj.property
+obj.method() 
+
+Date obj :
+getXX(), setXX()
+
+
+Array:
+
+
+
+user-defined objects:
+- Object Initilizer
+- class
+
+<script>
+       class Greeter{
+          greet(){
+            console.log("Hello World")
+          }
+       }
+
+       var g1 = new Greeter()
+       g1.greet()
+
+       class Student{
+          constructor(id, sname){
+            this.id = id
+            this.sname = sname
+          }
+          displayStudDetails(){
+            console.log(this.id, this.sname)
+          }
+       }
+       var s1 = new Student(101,"Shrishti")
+       var s2 = new Student(102,"Vedant")
+       var s3 = new Student(103,"Rahul")
+       var s4 = new Student(104,"Gaurav")
+       s2.displayStudDetails()
+       console.log(s2.id, s2.sname)
+
+    </script>
+
