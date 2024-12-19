@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+       function greet(){  //named function
+          document.write("Hello User!!")
+        }
+        //greet()
+
+        var greet1 = function(){
+            document.write("Hello User!!")
+        }
+        //greet1()
+
+        //fat arrow/lambda
+        var greet2 = () => document.write("Hello User!!")
+        greet2()
+
+
+        function greetUser(fname, lname){
+           document.write("Hello " + fname + "," + lname)
+       }
+       
+       var greetUser1 = function(fn, ln){
+        document.write("Hello " + fn + "," + ln)
+       }
+       //greetUser1("aaa","bbb")
+
+       var greetUser2 = username =>  document.write("Hello " + username)
+       greetUser2("Shrishti")
+
+       function add(a, b){
+        return a+b;
+       }
+
+       var add1 = function(a,b){
+        return a+b
+       }
+
+       var add2 = (a,b) => a + b
+       console.log("Sum is", add2(1,2))
+    </script>
+</body>
+
+</html>

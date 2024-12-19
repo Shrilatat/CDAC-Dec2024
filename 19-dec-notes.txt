@@ -1,0 +1,98 @@
+JS Objects!
+- Every JS obj exposes both - props as well as methods
+- Every property/attribute is read/write
+
+
+Types:
+- predefined/core/built-in objects
+- user-defined objects
+
+
+User-defined objects:
+- class
+- Object Initialzer
+- function constructor
+- using Object()
+
+class Student{
+          constructor(id, sname){
+            this.id = id
+            this.sname = sname
+          }
+          displayStudDetail(){
+            console.log(this.id, this.sname)
+          }
+       }
+
+       class GradStudent extends Student{
+          constructor(id, sname, gpa){
+            super(id, sname)
+            this.gpa = gpa
+          }
+
+          displayStudDetail(){
+            super.displayStudDetail()
+            console.log(this.gpa)
+          }
+       }
+
+       var gs1 = new GradStudent(1,"aaa", 9.8)
+       var gs2 = new GradStudent(2,"bbb", 7.8)
+
+       gs1.displayStudDetail()
+       gs2.displayStudDetail()
+
+---------------------
+
+
+var i = 10
+let/const
+
+
+-> lambda in Java
+
+=> lambda in JavaScript
+
+
+<html>
+</html>
+
+
+setInterval() : calls a func after every periodic interval
+setTimeout() : calls a func after a time period has elapsed
+
+
+Higher-order functions:
+
+setInterval(f1, 1000)
+
+
+
+function f1(){
+   c.log("Hi")
+}
+f1()
+
+-----------------------
+
+value property : only for form elements
+innerHTML property : Only for tags
+
+
+
+<tag> body </tag>
+
+eg : <p> This is para </p>
+
+
+
+Block VS Inline:
+Block : <p>, <div>, <Hn>, 
+Inline : <input>, <span>
+
+
+
+
+
+
+
