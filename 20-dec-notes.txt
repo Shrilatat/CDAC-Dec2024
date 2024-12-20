@@ -1,0 +1,74 @@
+<script>
+        function f1() {  // event handler!!
+            var plist = document.getElementsByTagName("p")
+            for(i=0;i<plist.length;i++){
+              plist[i].innerHTML = "New Content!"
+            }
+        }
+    </script>
+</head>
+<body>
+   <h1>Welcome to DOM</h1>
+   <p>This is Para-1</p>
+   <p>This is Para-2</p>
+   <p>This is Para-3</p>
+   <p>This is Para-4</p>
+    <input type="button" value="click here" onclick="f1()">
+
+
+----------------------------------
+
+
+Form validation:
+- form-level
+- field-level
+
+
+Enter Zipcode : text-filed
+
+SSN : 9 digit no : 999-99-9999
+
+password : 
+
+
+var re = /H[^AEIOU]T/
+
+
+VAR RE = /[A-Z0-9]/ 
+
+
+XML : To store, structure, transport
+JSON : To store, structure, transport
+
+AJAX  - Async JavaScript And XML
+AJAJ  - Async JavaScript And JSON
+
+
+Partial Screen Updates
+
+
+HTML + HTML5
+JavaScript
+CSS
+DOM
+XML
+XHR
+
+https://jsonplaceholder.typicode.com/todos
+
+
+HTTP methods:
+GET
+POST
+PUT
+DELETE
+
+geolocation.getCurrentPosition()
+
+getCurrentPosition(showPosition)
+
+function showPosition(position){
+   //obtain teh coordinates
+}
+
+
