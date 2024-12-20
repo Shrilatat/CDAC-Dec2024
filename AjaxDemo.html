@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getData(){
+            //Step-1 : obtain the XHR object
+            var xhr = new XMLHttpRequest()
+
+            //Step-2 : Obtain connection to server
+            //xhr.open(HTTP-method, url)
+            xhr.open("get", "https://jsonplaceholder.typicode.com/todos")
+
+            //Step-3 : Send teh request
+            xhr.send()
+
+            //Step-4 : access data from server
+            xhr.onreadystatechange = function(){
+                if(xhr.status == 200 && xhr.readyState == 4){
+                    var todos = JSON.parse(xhr.responseText)
+                    var str = ""
+                    str += "<table border=1>"
+                    for(todo of todos){
+                        str+="<tr><td>" + todo.title + "</td></tr>"
+                    }
+                    str += "</table>"
+                }
+                document.getElementById("res").innerHTML = str
+            }
+
+
+        }
+    </script>
+   
+</head>
+<body>
+    <input type="button" value="Get Data" onclick="getData()"><br>
+    <div id="res"></div>
+</body>
+</html>

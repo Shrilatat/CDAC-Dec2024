@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function getData() {
+            var geolocation = navigator.geolocation
+            geolocation.getCurrentPosition(showPosition)
+        }
+
+        function showPosition(position) {
+            var long = position.coords.longitude
+            var lat = position.coords.latitude
+
+            document.getElementById("res").innerHTML = long + "     " + lat
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Get Coords" onclick="getData()"><br>
+    <h1 id="res"></h1>
+</body>
+
+</html>
